@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+
+  --font-Sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  --movie-bg: #1c2028;
+  --movie-panel: #11141a;
+  --movie-panel-strong: #0d0e11;
+  --movie-accent: #05b7cf;
+  --movie-accent-hover: #18d0e6;
+  --movie-accent-light: #02c8de;
+  --movie-text: #d7d9de;
+  --movie-text-muted: #9ba2af;
+  --movie-text-dim: #6f7785;
+  --movie-border: #2a303b;
+  --movie-yellow: #ffc107;
+}
+
+@theme {
+  --color-background: var(--movie-bg);
+  --color-panel: var(--movie-panel);
+  --color-panel-strong: var(--movie-panel-strong);
+
+  --color-accent: var(--movie-accent);
+  --color-accent-hover: var(--movie-accent-hover);
+  --color-accent-light: var(--movie-accent-light);
+
+  --color-text: var(--movie-text);
+  --color-muted: var(--movie-text-muted);
+  --color-dim: var(--movie-text-dim);
+
+  --color-border: var(--movie-border);
+  --color-yellow: var(--movie-yellow);
+
+  --font-body: var(--font-sans);
+}
+
+.container-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+button {
+  cursor: pointer;
+}
