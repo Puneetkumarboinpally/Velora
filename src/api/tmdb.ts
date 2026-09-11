@@ -16,7 +16,7 @@ const getPopularBannerMovies = async () => {
 
   return data;
 
-  console.log(data.results);
+  console.log(data);
 };
 
 export default getPopularBannerMovies;
