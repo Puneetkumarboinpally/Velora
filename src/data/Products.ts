@@ -26,7 +26,7 @@ export const NavLinks: NavItem[] = [
     path: "/movies",
   },
   {
-    id: 1,
+    id: 5,
     title: "Tv Series",
     path: "/series",
   },
