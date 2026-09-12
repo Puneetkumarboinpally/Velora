@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import getPopularBannerMovies from "../api/tmdb";
+import getBannerPhotos from "../api/tmdb";
 
 const HeroSection = () => {
   useEffect(() => {
-    getPopularBannerMovies().then((data) => {
+    getBannerPhotos().then((data) => {
       console.log(data);
     });
   }, []);
