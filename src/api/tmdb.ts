@@ -1,3 +1,5 @@
+import type { MovieReference } from "../types/movies";
+
 const TOKEN = import.meta.env.VITE_TMDB_ACCESS_TOKEN;
 
 const getBannerPhotos = async () => {
@@ -10,7 +12,7 @@ const getBannerPhotos = async () => {
   if (!response.ok) {
     throw new Error("failed to fetch Hero Banner photos");
   }
-  const data = await response.json();
+  const data: MovieReference = await response.json();
 
   return data;
 };
