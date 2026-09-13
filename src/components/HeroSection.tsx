@@ -1,13 +1,21 @@
-import { useEffect } from "react";
-import getPopularBannerMovies from "../api/tmdb";
+import { useEffect, useState } from "react";
+import type { Movies } from "../types/movies";
+import getBannerPhotos from "../api/tmdb";
 
 const HeroSection = () => {
+  const [bannerPhotos, setBannerPhotos] = useState<Movies[]>([]);
   useEffect(() => {
-    getPopularBannerMovies().then((data) => {
-      console.log(data);
+    getBannerPhotos().then((data) => {
+      console.log(data.results);
+
+      setBannerPhotos(data.results);
     });
   }, []);
-  return <div>HeroSection</div>;
+  return (
+    <div>
+      <h1>chinnu</h1>
+    </div>
+  );
 };
 
 export default HeroSection;
