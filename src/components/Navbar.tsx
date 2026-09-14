@@ -56,9 +56,9 @@ const Navbar = () => {
         <div
           className={`
         absolute top-full left-0 w-full
-        lg:hidden
+        lg:hidden z-50
         bg-background border-b border-border
-        transition-all duration-500
+        transition-all duration-500 
         ${
           isOpen
             ? "opacity-100 translate-y-0 visible"

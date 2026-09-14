@@ -1,8 +1,9 @@
 export type Movies = {
   id: number;
   title: string;
-  genre_ids: number[];
+  release_date: string;
   overview: string;
+  popularity: number;
   backdrop_path: string | null;
 };
 
