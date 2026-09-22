@@ -1,9 +1,11 @@
-import React from 'react'
-
 const Card = () => {
   return (
-    <div>Card</div>
-  )
-}
+    <div>
+      <div>
+        <img src={} alt={} />
+      </div>
+    </div>
+  );
+};
 
-export default Card
+export default Card;
