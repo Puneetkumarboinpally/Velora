@@ -2,7 +2,11 @@ const Card = () => {
   return (
     <div>
       <div>
-        <img src={} alt={} />
+        <div>
+          <img src="" alt="" />
+        </div>
+        <span>HD</span>
+        <h2>SuperMan</h2>
       </div>
     </div>
   );
